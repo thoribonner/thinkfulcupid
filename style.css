@@ -1,0 +1,170 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+section {
+  padding: 20px;
+}
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+/* -------------------------- */
+/* ------- navigation ------- */
+/* -------------------------- */
+header {
+  background-color: #83092e;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 72px;
+  color: #ecdbc9;
+}
+.top-nav {
+  display: flex;
+}
+.top-nav-item {
+  list-style-type: none;
+}
+.top-nav-item a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+.top-nav-item a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------------------------- */
+/* ---------- form ---------- */
+/* -------------------------- */
+form {
+  border: 2px solid #6b1a22;
+  margin: 2px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+.form-item label {
+  font-weight: bold;
+}
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------------------------- */
+/* --------- content -------- */
+/* -------------------------- */
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+}
+.item {
+  width: 100%;
+  padding: 10px;
+}
+.item h2 {
+  padding-top: 10px;
+  margin-bottom: 2px;
+}
+
+/* -------------------------- */
+/* --------- footer --------- */
+/* -------------------------- */
+footer {
+  background-color: #83092e;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* *------------*****-------------* */
+/* *-------* media query *--------* */
+/* *---------* desktop *----------* */
+/* *------------*****-------------* */
+@media all and (min-width: 480px) {
+
+  /* ----------------------- */
+  /* ----- navigation ------ */
+  /* ----------------------- */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .logo {
+    font-size: 63px;
+    padding: 5px;
+  }
+  .top-nav {
+    display: flex;
+  }
+  .top-nav-item {
+    padding: 5px;
+  }
+
+  /* ----------------------- */
+  /* ------- content ------- */
+  /* ----------------------- */
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+  .item {
+    padding: 10px;
+    flex: 1;
+  }
+  .item-double {
+    flex: 2;
+  }
+  .blog-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
