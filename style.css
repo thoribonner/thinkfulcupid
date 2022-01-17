@@ -1,5 +1,4 @@
 /* -------  General Styles ------- */
-
 body {
   font-family: "Lato", sans-serif;
   color: #6b1a22;
@@ -139,16 +138,19 @@ footer p {
     padding: 20px;
   }
   .logo {
-    font-size: 63px;
     padding: 5px;
   }
   .top-nav {
     display: flex;
+    flex-wrap: wrap;
   }
   .top-nav-item {
     padding: 5px;
   }
-
+  .top-nav-item a {
+    text-align: right;
+  }
+  
   /* ----------------------- */
   /* ------- content ------- */
   /* ----------------------- */
